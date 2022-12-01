@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/default_layout">
 <head>
     <meta charset="UTF-8">
     <title>Scarica gratis GARAGE Template html/css - Web Domus Italia - Web Agency </title>
@@ -14,6 +14,12 @@
 </head>
 <body>
 <!-- Header -->
+
+<th:block layout:fragement="content">
+    <div>하이하이</div>
+
+</th:block>
+
 <div class="allcontain">
     <div class="header">
         <ul class="socialicon">
@@ -27,7 +33,7 @@
         </ul>
         <ul class="logreg">
             <li><a href="#">Login </a> </li>
-            <li><a href="#"><span class="register">Register</span></a></li>
+            <li><a th:href="@{/join}"><span class="register">회원가입</span></a></li>
         </ul>
     </div>
     <!-- Navbar Up -->
