@@ -14,7 +14,7 @@ public class MainController {
 //    //CityService cityservice;
 
 
-    @GetMapping("/")
+    @GetMapping("index")
     public String main() {
         return "index";
     }
