@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>bikelife</artifactId>
+    <artifactId>bikelife1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>bikelife</name>
-    <description>bikelife</description>
+    <name>bikelife1</name>
+    <description>bikelife1</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -63,7 +63,7 @@
                 <configuration>
                     <excludes>
                         <exclude>
-                            <groupId>org.projectlombok</groupId>
+                            <groupId>org.project lombok</groupId>
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>

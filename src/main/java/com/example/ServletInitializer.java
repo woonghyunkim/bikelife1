@@ -1,5 +1,6 @@
-package com.example.bikelife;
+package com.example;
 
+import com.example.BikelifeApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 

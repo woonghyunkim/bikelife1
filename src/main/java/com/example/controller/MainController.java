@@ -1,4 +1,4 @@
-package controller;
+package com.example.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,17 +15,7 @@ public class MainController {
 
 
     @GetMapping("/")
-//    public String main(Model model) {
     public String main() {
-//        try {
-//            List<CityDTO> list = cityservice.getall();
-//            model.addAttribute("citylist",list);
-//        } catch (Exception e) {
-//            // TODO Auto-generated catch block
-//            e.printStackTrace();
-//        }
-//        model.addAttribute("center","maincenter");
         return "index";
     }
-
 }
