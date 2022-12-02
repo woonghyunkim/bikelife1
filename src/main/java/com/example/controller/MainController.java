@@ -1,37 +1,33 @@
 package com.example.controller;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
+@RequestMapping("/")
 public class MainController {
 
-//    @Autowired
-//    //CityService cityservice;
-
-
-    @GetMapping("/")
+    @GetMapping
     public String main() {
         return "index";
     }
 
-
-    @GetMapping("join")
-    public String join() {
-        return "/member/join";
+//    로그인 화면 이동
+    @GetMapping("signin/view.do")
+    public String login() {
+        return "views/user/signin";
     }
 
-    @GetMapping("test")
-    public ModelAndView test() {
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("fragments/page");
-        return mv;
+//    회원가입 화면 이동
+    @GetMapping("signup/view.do")
+    public String signup() {
+        return "views/user/signup";
     }
+
+
+
 
 
 
